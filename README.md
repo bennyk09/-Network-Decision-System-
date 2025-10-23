@@ -50,5 +50,5 @@ Example Decision Ranges:
 
 1. Clone this repository:  
 ```bash
-git clone https://github.com/<your-username>/NetworkDecisionSystem.git
+git clone https://github.com/bennyk09/-Network-Decision-System-.git
 
