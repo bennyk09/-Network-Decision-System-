@@ -1,41 +1,54 @@
-# 🌐 Network Decision System using the Three-Case Algorithm based on Matrix Summation
+# Network Decision System (Three-Case Algorithm)
 
-## 📘 Overview
-The **Network Decision System** is a mathematical and computational model designed to analyze and classify real-time network stability.  
-It is powered by the **Three-Case Algorithm based on Matrix Summation**, a universal mathematical decision-making framework developed by **Benny (2025)**.
-
-This system captures Wi-Fi signal strength from a local interface, processes it through a structured matrix-based algorithm, and determines whether the connection is **Strong**, **Moderate**, or **Weak** — providing a lightweight, reliable, and adaptive stability assessment.
-
----
-
-## 🎯 Purpose
-The purpose of this project is to demonstrate how **mathematical computation** can be practically integrated with **programming** to evaluate real-world network stability.  
-It transforms raw signal readings into a **quantified stability index** through a matrix summation and averaging process.
+**Based on Matrix Summation**  
+**Presented by:** Joseph Kothapalli  
+**Department of Computer Science and Engineering**  
+**Date:** 11 October 2025  
 
 ---
 
-## 🧠 The Core Algorithm — Three-Case Algorithm based on Matrix Summation
-This algorithm was originally designed as a **neutral, standard mathematical model** for decision-making based on directional matrix summations.
+## Overview
 
-### Formula
-\[
-F(A) = \frac{1}{8}\left(\sum_{i=1}^{3} \alpha_i + \sum_{j=1}^{3} \beta_j + \gamma + \delta \right)
-\]
+The **Network Decision System** is a lightweight analytical framework designed to evaluate real-time network stability using a **Three-Case Algorithm based on Matrix Summation**. It converts signal readings into a structured 3×3 matrix, computes directional summations (rows, columns, diagonals), and produces a global decision metric `f(A)`.
 
-Where:
-- \( \alpha_i \): Row summations  
-- \( \beta_j \): Column summations  
-- \( \gamma \): Main diagonal sum  
-- \( \delta \): Opposite diagonal sum  
-
-The final average \( F(A) \) determines the system condition:
-- **Strong:** \( F(A) \ge 1.5 \)  
-- **Moderate:** \( -1.5 < F(A) < 1.5 \)  
-- **Weak:** \( F(A) \le -1.5 \)
+Unlike conventional AI or machine learning models, this deterministic approach is **transparent, interpretable, and efficient**, suitable for real-time applications.
 
 ---
 
-## ⚙️ How It Works
-1. Captures real-time Wi-Fi signal strength using:
-   ```bash
-   netsh wlan show interfaces
+## Features
+
+- Evaluates Wi-Fi signal strength, IoT device reliability, industrial process monitoring, and more.  
+- Uses directional summation to compute overall network stability.  
+- Provides three decision levels:  
+  - **Strong (Good)** – stable connection  
+  - **Moderate** – average connection  
+  - **Weak** – poor connection  
+- Fully implemented in **Java** with ANSI color-coded output for terminal readability.  
+- Can be adapted for embedded systems and other sensor-based applications.
+
+---
+
+## How It Works
+
+1. **Collect Input Signals:** Reads consecutive network signal strengths.  
+2. **Matrix Mapping:** Maps signal readings into a 3×3 matrix.  
+3. **Directional Summation:** Computes sums across rows, columns, and diagonals.  
+4. **Global Stability Function:** Calculates `f(A)` = average of all directional sums.  
+5. **Decision Mapping:** Compares `f(A)` with thresholds to classify network state.
+
+Example Decision Ranges:
+
+| f(A) Value | Network State       |
+|------------|-------------------|
+| ≥ 1.5      | Good connection    |
+| -1.5 < f(A) < 1.5 | Moderate connection |
+| ≤ -1.5     | Weak connection    |
+
+---
+
+## Installation 
+
+1. Clone this repository:  
+```bash
+git clone https://github.com/<your-username>/NetworkDecisionSystem.git
+
