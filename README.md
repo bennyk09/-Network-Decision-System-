@@ -51,8 +51,31 @@ Example Decision Ranges:
 1. Clone this repository:  
 ```bash
 git clone https://github.com/bennyk09/-Network-Decision-System-.git
-
 ```
 2. Navigate to the project directory:
+```
 cd NetworkDecisionSystem
+```
+3. Compile the Java file:
+```
+javac NetworkStabilityAnalyzer.java
+```
+4. Run the program:
+```
+java NetworkStabilityAnalyzer
+```
+# Usage
+
+1. The program reads signal strength from your system’s Wi-Fi interface.
+2. Converts raw dBm readings to a discrete value (-1, 0, 1) representing weak, moderate, or strong signals.
+3. Computes row, column, and diagonal summations to produce a final network stability score.
+4. Displays the result in the terminal with color-coded messages:
+```
+Good connection   ✅
+Moderate connection ⚠️
+Weak connection   ❌
+```
+# License
+This project is open for academic and research purposes you may freely use and adapt it.
+
 
