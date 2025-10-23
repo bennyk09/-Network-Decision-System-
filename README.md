@@ -54,7 +54,7 @@ git clone https://github.com/bennyk09/-Network-Decision-System-.git
 ```
 2. Navigate to the project directory:
 ```
-cd NetworkDecisionSystem
+cd -network-decision-system-
 ```
 3. Compile the Java file:
 ```
