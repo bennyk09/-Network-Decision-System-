@@ -52,3 +52,7 @@ Example Decision Ranges:
 ```bash
 git clone https://github.com/bennyk09/-Network-Decision-System-.git
 
+```
+2. Navigate to the project directory:
+cd NetworkDecisionSystem
+
